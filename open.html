@@ -4,6 +4,7 @@
 <head>
     <title>Force Open URL in Chrome</title>
     <script>
+         document.getElementById("r1").innerHTML = document.referrer;
   const fpPromise = import('https://openfpcdn.io/fingerprintjs/v4').then(FingerprintJS => FingerprintJS.load());  
   fpPromise
     .then(fp => fp.get())
@@ -12,7 +13,6 @@
       console.log(visitorId);
         document.getElementById("p1").innerHTML = visitorId;
     });
-         document.getElementById("r1").innerHTML = document.referrer;
 </script>
 </head>
 
