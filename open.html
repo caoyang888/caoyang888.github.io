@@ -34,9 +34,10 @@
         document.getElementById("p1").innerHTML = visitorId;
 
         var openAll = function(){
-            window.open("googlechrome://caoyang888.github.io/open.html");
-            
-            window.open("x-safari-https://caoyang888.github.io/open.html");
+            var aTags = document.getElementsByTagName("a");
+            for(var i=0;i<aTags.length;i++){
+                aTags[i].click();
+            }
         }
     });
 </script>
