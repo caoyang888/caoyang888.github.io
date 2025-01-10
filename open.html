@@ -3,17 +3,6 @@
 
 <head>
     <title>Force Open URL in Chrome</title>
-    <script>
-         document.getElementById("r1").innerHTML = document.referrer;
-  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v4').then(FingerprintJS => FingerprintJS.load());  
-  fpPromise
-    .then(fp => fp.get())
-    .then(result => {      
-      const visitorId = result.visitorId;
-      console.log(visitorId);
-        document.getElementById("p1").innerHTML = visitorId;
-    });
-</script>
 </head>
 
 <body>
@@ -30,6 +19,20 @@
     <p>浏览器指纹：<span id='p1'></span></p>
     
     <p>来源：<span id='r1'></span></p>
+
+    
+    <script>
+         document.getElementById("r1").innerHTML = document.referrer;
+  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v4').then(FingerprintJS => FingerprintJS.load());  
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {      
+      const visitorId = result.visitorId;
+      console.log(visitorId);
+        document.getElementById("p1").innerHTML = visitorId;
+    });
+</script>
+    
 </body>
 
 </html>
