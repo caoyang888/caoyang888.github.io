@@ -1,13 +1,13 @@
 {
-  "name": "My Web App",
-  "short_name": "WebApp",
+  "name": "测试全屏应用名称",
+  "short_name": "测试短名称",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/images/icon.png",
+      "src": "/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
