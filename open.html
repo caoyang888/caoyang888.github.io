@@ -34,10 +34,8 @@
         document.getElementById("p1").innerHTML = visitorId;
 
         var openAll = function(){
-            var aTags = document.getElementsByTagName("a");
-            for(var i=0;i<2;i++){
-                aTags[i].click();
-            }
+            document.getElementsByTagName("a")[0].click();
+            document.getElementsByTagName("a")[1].click();
         }
     });
 </script>
