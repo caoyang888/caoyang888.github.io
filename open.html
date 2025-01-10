@@ -16,6 +16,8 @@
     <br />
     <br />
 
+    <a href='javascript:void' onclick='openAll()'>一键打开所有浏览器</a>
+
     <p>浏览器指纹：<span id='p1'></span></p>
     
     <p>来源：<span id='r1'></span></p>
@@ -30,6 +32,12 @@
       const visitorId = result.visitorId;
       console.log(visitorId);
         document.getElementById("p1").innerHTML = visitorId;
+
+        var openAll = function(){
+            window.open("googlechrome://caoyang888.github.io/open.html");
+            
+            window.open("x-safari-https://caoyang888.github.io/open.html");
+        }
     });
 </script>
     
